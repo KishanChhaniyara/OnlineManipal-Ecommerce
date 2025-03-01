@@ -1,87 +1,10 @@
 # OnlineManipal-Ecommerce
 E-Commerce Project
 E-Commerce 
-
- 
-
- 
-
-A PROJECT REPORT   
-
-  
-
-Submitted in partial fulfilment of the requirement for the award of the degree of BACHELOR OF COMPUTER APPLICATIONS (BCA)  
-
- 
-
- 
-
-CHHANIYARA KISHANKUMAR PRABHATBHAI 
-
-2214102008 
-
- 
-
-  
- 
-
-Centre for Distance & Online Education  
-
-MANIPAL UNIVERSITY JAIPUR JAIPUR-303007 RAJASTHAN, INDIA 
-
-Table of Contents 
-
-​​ 
-
 ​ 
 
 ​ 
 
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​ 
-
-​​ 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 Introduction 
 
