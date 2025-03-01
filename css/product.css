@@ -1,0 +1,123 @@
+/* General Page Styles */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 110px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Section - Image Gallery */
+.product-images {
+    flex: 1;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Main Product Image */
+#mainImage {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mainImage:hover {
+    transform: scale(1.05);
+}
+
+/* Image Thumbnails */
+#imageGallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+#imageGallery img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid transparent;
+}
+
+#imageGallery img:hover {
+    transform: scale(1.1);
+    border-color: #ff6600;
+}
+
+/* Right Section - Product Details */
+.product-details {
+    flex: 1;
+    max-width: 550px;
+}
+
+.product-details h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-details p {
+    font-size: 18px;
+    color: #666;
+    margin: 8px 0;
+}
+
+/* Price Style */
+#productPrice {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff6600;
+}
+
+/* Add to Cart Button */
+button {
+    background: #ff6600;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e65c00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .product-images, .product-details {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    #imageGallery {
+        justify-content: center;
+    }
+}

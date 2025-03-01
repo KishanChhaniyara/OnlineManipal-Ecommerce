@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <title>About Us</title>
+  </head>
+
+  <body>
+    <div id="header"></div>
+    <script>
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {document.getElementById("header").innerHTML = data;
+        });
+    </script>
+
+    <section class="about"> 
+      <div class="about-info">
+        <div class="about-img">
+          <img
+            src="https://radhekisna.com/cdn/shop/files/Renewlogo.png?v=1734462199&width=300"
+            alt="Radhekisna"
+          />
+        </div>
+        <div>
+          <p>
+            Radhekisna is a leading platform that provides luxuriour beddings, bedding sets, and other luxurious furnishings at affordable prices. We strive to create a platform that empowers consumers to find the perfect bedding
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <h1>Meet Our Founder</h1>
+      <div class="team-cards">
+        <!-- Cards here -->
+        <!-- Card 1 -->
+
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://media.licdn.com/dms/image/v2/C5603AQEWfDyjPR4iIw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1609428308282?e=1745452800&v=beta&t=uG0nM-tkNra--twXNzm6qfEhunyBF49UBQiyqqf0vQQ"
+              alt="User 1"
+            />
+          </div>
+          <div class="card-info">
+            <h2 class="card-name">Kishan Chhaniyara</h2>
+            <p class="card-role">CEO and Founder</p>
+            <p class="card-email">kishanchhaniyara@gmail.com</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+
+        <div class="card">
+          <div class="card-img">
+            <img
+              src="https://media.licdn.com/dms/image/v2/D5603AQEh_c-3_r6e6w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1695276525571?e=1745452800&v=beta&t=dmTvKdE29XRHwyCWslr_B0fA1AoluO-tUhZ-qYyP3XY"
+              alt="User 2"
+            />
+          </div>
+          <div class="card-info">
+            <h2 class="card-name">Chetana Vaghadiya</h2>
+            <p class="card-role">Co-Founder</p>
+            <p class="card-email">chetanavaghadiya007@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

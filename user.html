@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+         <!-- HEADER -->
+         <div id="header"></div>
+         <script>
+         fetch("header.html")
+         .then(response => response.text())
+         .then(data => { document.getElementById('header').innerHTML = data; });
+         </script>
+
+    <div class="user-container">
+        <h2>Welcome, <span id="username"></span></h2>
+
+        <h3>Manage Addresses</h3>
+        <form id="addressForm">
+            <label for="addressType">Address Type:</label>
+            <select id="addressType">
+                <option value="Home">Home</option>
+                <option value="Office">Office</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="houseNo">House No:</label>
+            <input type="text" id="houseNo" required>
+
+            <label for="street">Street Address:</label>
+            <input type="text" id="street" required>
+
+            <label for="landmark">Landmark:</label>
+            <input type="text" id="landmark">
+
+            <label for="pinCode">Pin Code:</label>
+            <input type="text" id="pinCode" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" required>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="text" id="mobile" required>
+
+            <button type="submit">Save Address</button>
+            <p id="message" style="color: green;"></p>
+        </form>
+
+        <h3>Your Addresses</h3>
+        <ul id="addressList"></ul>
+
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

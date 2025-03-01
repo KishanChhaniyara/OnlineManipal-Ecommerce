@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--<title>Bedsheets Collection</title> -->
+    <link rel="stylesheet" href="/css/bedsheet.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+        .then(response => response.text())
+        .then(data => { document.getElementById('header').innerHTML = data; });
+    </script>
+         <div class="container">
+            /* Checkout form */
+            
+    <div id="bedsheetsContainer" class="product-grid"></div>
+
+    <script src="bedsheets.js"></script>
+</body>
+</html>
